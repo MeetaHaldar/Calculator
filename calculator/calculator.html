@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body{
+        background:  url(./showcase.jpg) rgba(15, 15, 15, 0.7);
+       
+    }
+   .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh ;
+     
+        
+    }
+   #heading{
+       text-align: center;
+       font-size: 4rem;
+       color: whitesmoke;
+       text-transform: uppercase;
+       position: absolute;
+       top: 50px;
+       left: 40%;
+     
+   }
+    .calculator{
+        position: relative;
+        display: grid;
+        font-size: 2rem;
+        margin: 10px;
+        box-shadow: -15px -15px 50px  rgba(255,255,255,0.1),
+            15px 15px 30px rgba(0,0,0,1),
+            inset -5px -10px 5px rgba(255,255,255,0.1),
+            inset 2px 2px 9px rgba(0,0,0,0.5),
+            0 0 0 3px rgb(32, 28, 28) ;
+        
+    }
+    .calculator .value{
+        grid-column: span 4;
+        text-align: right;
+        height: 140px;
+        font-size: 1.8rem;
+        background-color: #333;
+        color: white;
+        border-radius: 10px;
+
+    }
+    .calculator span{
+        display: grid;
+        background-color: #333;
+        height:100px;
+        width:100px ;
+        color: white;
+
+        /* text-align: center; */
+        place-items: center;
+        border: 1px solid rgb(122, 111, 111)
+    }
+    .calculator span:active{
+        background-color: rgb(66, 117, 15);
+    }
+    .calculator span.clear{
+        grid-column: span 2;
+        width: 200px;
+        background-color: rgb(223, 80, 28);
+    }
+    .calculator span.plus{
+        grid-column: span 2;
+        width: 200px;
+        background: rgb(150, 138, 148);
+    }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">calculator</h1>
+    <div class="container">
+    <form  class="calculator" name="calc">
+      
+<input type="text" name="txt" class="value" readonly="">
+ <span class="num clear" onclick="document.calc.txt.value =''"> c</span>
+ <span class="num" onclick="document.calc.txt.value +='/' "> /</span>
+ <span class="num" onclick="document.calc.txt.value +='*' "> *</span>
+ <span class="num" onclick="document.calc.txt.value +='7' "> 7</span>
+ <span class="num" onclick="document.calc.txt.value +='8' "> 8</span>
+ <span class="num" onclick="document.calc.txt.value +='9' "> 9</span>
+ <span class="num" onclick="document.calc.txt.value +='-' "> -</span>
+ <span class="num" onclick="document.calc.txt.value +='4' "> 4</span>
+ <span class="num" onclick="document.calc.txt.value +='5' "> 5</span>
+ <span class="num" onclick="document.calc.txt.value +='6' "> 6</span>
+ <span class="num " onclick="document.calc.txt.value +='+' "> +</span>
+ <span class="num" onclick="document.calc.txt.value +='3' "> 3</span>
+ <span class="num" onclick="document.calc.txt.value +='2' "> 2</span>
+ <span class="num" onclick="document.calc.txt.value +='1' "> 1</span>
+ <span class="num " onclick="document.calc.txt.value +='0' "> 0</span>
+  <span class="num" onclick="document.calc.txt.value +='%' "> %</span>
+   <span class="num" onclick="document.calc.txt.value +='.' "> .</span>
+   <span class="num plus" onclick="document.calc.txt.value =eval(calc.txt.value)"> =</span>
+
+
+    </form>
+</div>
+</body>
+</html>
