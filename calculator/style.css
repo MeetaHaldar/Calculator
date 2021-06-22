@@ -53,14 +53,13 @@ padding: 25px;
 .calculator span{
     display: grid;
     background-color:#bd1434;
-    
-    /* height:100px;
-    width:100px ; */
-grid-template-columns: repeat(3,1fr);
+ height:100px;
+    width:100px ; 
+/* grid-template-columns: repeat(3,1fr); */
     color: #ccc;
     cursor: pointer;
-
-    /* text-align: center; */
+align-items: center;
+    text-align: center;
     place-items: center;
     
 }
@@ -89,4 +88,15 @@ font-size: 3rem;
 }
 .calculator span.plus:hover{
   opacity: 0.8;
+}
+
+@media (max-width:380px)
+{
+    .calculator span{
+        
+     height:60px;
+        width:60px ; 
+grid-gap: none;
+    
+    }
 }
