@@ -33,48 +33,62 @@
     .calculator{
         position: relative;
         display: grid;
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin: 10px;
-        box-shadow: -15px -15px 50px  rgba(255,255,255,0.1),
+        /* box-shadow: -15px -15px 50px  rgba(255,255,255,0.1),
             15px 15px 30px rgba(0,0,0,1),
             inset -5px -10px 5px rgba(255,255,255,0.1),
             inset 2px 2px 9px rgba(0,0,0,0.5),
-            0 0 0 3px rgb(32, 28, 28) ;
+            0 0 0 3px rgb(32, 28, 28) ; */
         
     }
     .calculator .value{
         grid-column: span 4;
         text-align: right;
         height: 140px;
-        font-size: 1.8rem;
-        background-color: #333;
-        color: white;
-        border-radius: 10px;
+        font-size: 25px;
+        background-color: #f7a3b3;
+        color: black;
+  padding: 25px;
+        outline: none;
+        border: none;
 
     }
     .calculator span{
         display: grid;
-        background-color: #333;
+        background-color:#bd1434;
         height:100px;
         width:100px ;
-        color: white;
+        color: #ccc;
+        cursor: pointer;
 
         /* text-align: center; */
         place-items: center;
-        border: 1px solid rgb(122, 111, 111)
+        
+    }
+    .calculator span:hover{
+        background-color:#a5112d ;
     }
     .calculator span:active{
-        background-color: rgb(66, 117, 15);
+        background-color: #F04666;
     }
     .calculator span.clear{
         grid-column: span 2;
         width: 200px;
-        background-color: rgb(223, 80, 28);
+        background-color: #ED1941;
+    }
+    .calculator span.clear:hover{
+      opacity: 0.9;
     }
     .calculator span.plus{
         grid-column: span 2;
         width: 200px;
-        background: rgb(150, 138, 148);
+        background: #0c0302;
+color: #ccc;
+
+    }
+    .calculator span.plus:hover{
+      opacity: 0.8;
     }
     </style>
 </head>
