@@ -53,9 +53,10 @@ padding: 25px;
 .calculator span{
     display: grid;
     background-color:#bd1434;
-    height:100px;
-    width:100px ;
-/* grid-template-columns: repeat(3,1fr); */
+    
+    /* height:100px;
+    width:100px ; */
+grid-template-columns: repeat(3,1fr);
     color: #ccc;
     cursor: pointer;
 
