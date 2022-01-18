@@ -6,12 +6,24 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #fbd1d9;
 }
+h1{
+    margin: 10px auto;
+    text-align: center;
+    font-family: cursive;
+    cursor: pointer;
+   background-color:rgb(214, 45, 79);
+   color: rgb(245, 239, 227);
+   max-width: 300px;
+   padding: 10px;
+ 
+}
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height:100vh ;
+   
  
     
 }
@@ -30,11 +42,12 @@
     display: grid;
     font-size: 1.7rem;
     margin: 10px;
-    /* box-shadow: -15px -15px 50px  rgba(255,255,255,0.1),
+   
+    box-shadow: -15px -15px 50px  rgba(255,255,255,0.1),
         15px 15px 30px rgba(0,0,0,1),
         inset -5px -10px 5px rgba(255,255,255,0.1),
         inset 2px 2px 9px rgba(0,0,0,0.5),
-        0 0 0 3px rgb(32, 28, 28) ; */
+        0 0 0 3px rgb(32, 28, 28) ;
       
     
 }
@@ -52,10 +65,11 @@ padding: 25px;
 }
 .calculator span{
     display: grid;
-    background-color:#bd1434;
+    background-color:crimson;
  height:100px;
     width:100px ; 
 /* grid-template-columns: repeat(3,1fr); */
+border: 1px solid #b32c44;
     color: #ccc;
     cursor: pointer;
 align-items: center;
@@ -72,7 +86,7 @@ align-items: center;
 .calculator span.clear{
     grid-column: span 2;
     width: 200px;
-    background-color: #ED1941;
+    background-color: #eb5e45;
     font-size: 2.2rem;
 }
 .calculator span.clear:hover{
