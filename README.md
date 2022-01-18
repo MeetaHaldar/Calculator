@@ -3,6 +3,8 @@
 <h3>Introduction 🧮</h3>
 <p> A simple calculator  </p>
 
+<a href="https://meetahaldar.github.io/Calculator/">Demo</a>
+
  <h3>Tech Stack</h3>
   <ul>
     <li>html</li>
